@@ -43,6 +43,9 @@ input {
 $colors: (
   black: #000,
   white: #fff,
+  orange: #e28525,
+  teal: #016972,
+  green: #00403f,
 );
 
 @function color($color-name) {
