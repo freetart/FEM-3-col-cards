@@ -1,0 +1,66 @@
+// CARD
+.card {
+  &-sedan {
+    background-color: color(orange);
+  }
+
+  &-suvs {
+    background-color: color(teal);
+  }
+
+  &-luxury {
+    background-color: color(green);
+  }
+
+  &-content {
+    padding: 2rem;
+
+    .card-img {
+      width: 10rem;
+    }
+
+    .card-title {
+      @include headingStyles();
+      font-size: size(xxl);
+    }
+
+    .card-desc {
+      @include textStyles();
+      font-size: size(xxs);
+    }
+  }
+}
+
+// BUTTONS
+.btn {
+  @include textStyles();
+  background-color: color(white);
+  padding: 1rem 1.5rem;
+  font-size: size(xs);
+  border-radius: 2rem;
+  display: inline-block;
+  color: color(black);
+  transition: all 0.3s ease-in-out;
+  outline: 0;
+
+  &:hover,
+  &:focus {
+    box-shadow: 0.4rem 0.4rem 0.4rem 0.2rem #363636;
+    transform: translateY(-5px);
+  }
+}
+
+.btn-sedan {
+  @extend .btn;
+  color: color(orange);
+}
+
+.btn-suvs {
+  @extend .btn;
+  color: color(teal);
+}
+
+.btn-luxury {
+  @extend .btn;
+  color: color(green);
+}

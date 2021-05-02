@@ -1,0 +1,10 @@
+.cards-container {
+  @include maxWidthSm();
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 2rem;
+
+  @media (max-width: 600px) {
+    grid-template-columns: 1fr;
+  }
+}

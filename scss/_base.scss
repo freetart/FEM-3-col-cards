@@ -19,6 +19,11 @@ html {
 
 body {
   font-family: "Open Sans", sans-serif;
+  background-color: #000;
+  color: #fff;
+  display: grid;
+  place-items: center;
+  height: 100vh;
 }
 
 img {
@@ -80,7 +85,7 @@ $font-sizes: (
 @mixin headingStyles() {
   font-weight: 600;
   letter-spacing: 0.2rem;
-  text-transform: capitalize;
+  text-transform: uppercase;
 }
 
 @mixin textStyles() {
