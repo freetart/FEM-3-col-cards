@@ -1,5 +1,7 @@
 // CARD
 .card {
+  overflow: hidden;
+
   &-sedan {
     background-color: color(orange);
   }
