@@ -17,11 +17,13 @@
 
     .card-img {
       width: 10rem;
+      transition: all 0.3s ease-in-out;
+      transform: translateX(0);
     }
 
     .card-title {
       @include headingStyles();
-      font-size: size(xxl);
+      font-size: size(xxl) + 0.5rem;
     }
 
     .card-desc {
