@@ -1,3 +1,4 @@
+// cards
 .cards-container {
   @include maxWidthSm();
   display: grid;
@@ -6,5 +7,32 @@
 
   @media (max-width: 600px) {
     grid-template-columns: 1fr;
+  }
+}
+
+// footer
+.footer {
+  @include flexCenter;
+  text-align: center;
+  flex-wrap: wrap;
+
+  h3 {
+    @include textStyles;
+    font-size: size(xxs);
+  }
+
+  a {
+    @include headingStyles;
+    color: color(teal);
+    outline: 0;
+
+    &:hover,
+    &:focus {
+      text-decoration: underline;
+    }
+  }
+
+  img {
+    width: 5rem;
   }
 }

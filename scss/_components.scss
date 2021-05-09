@@ -25,6 +25,7 @@
 
     .card-title {
       @include headingStyles();
+      text-transform: uppercase;
       font-size: size(xxl) + 0.5rem;
     }
 
